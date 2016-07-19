@@ -1,0 +1,4 @@
+meta.name: Media Player (D-Bus)
+meta.author: miniME89
+meta.description: Remote for D-Bus media players.
+meta.tags.category: media

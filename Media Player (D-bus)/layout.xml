@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layout color="#0383DC">
+    <row>
+        <label id="title" text="" textAlign="center" />
+    </row>
+    <row weight="wrap">
+        <slider id="pos" text="Position" onchange="position_change" onup="position_apply" />
+    </row>
+    <row weight="wrap">
+        <slider id="vol" weight="3" text="Volume" onchange="volume_change" onup="volume_apply" />
+        <button id="mute" weight="1" icon="vup" ontap="toggle_mute" />
+    </row>
+    <row weight="wrap">
+        <button text="-30s" ontap="seek_m_30" />
+        <button text="-5s" ontap="seek_m_5" />
+        <button text="+5s" ontap="seek_p_5" />
+        <button text="+30s" ontap="seek_p_30" />
+    </row>
+    <row weight="wrap">
+        <button icon="previous" ontap="previous" />
+        <button id="play" icon="playpause" ontap="play_pause" />
+        <button id="stop" icon="stop" ontap="stop" />
+        <button icon="next" ontap="next" />
+    </row>
+</layout>
